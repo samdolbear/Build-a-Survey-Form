@@ -8,8 +8,27 @@
 
   <div class="container">
     <body>
-      <h1>freeCodeCamp Survey Form</h1>
-      <p>Thank you for taking the time to help us improve the platform </p>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform </p>
+      <form id="survey-form">        
+        <fieldset>
+          <label for="name">Name <input id="name" name="name" type="text" required /></label>          
+          <label for="email">Email <input id="email" name="email" type="email" required /></label>
+          <label for="number">Age <input id="number" type="number" name="age" min="10" max="99" pattern="[0-9]*"/></label>
+          <label for="referrer">How did you hear about us?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Full Time Job</option>
+              <option value="3">Full Time learner</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+
     </body>
 
 
