@@ -2,32 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>freeCodeCamp Survey Form</title>
+    <title>Bic-4 Survey Form</title>
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <div class="container">
     <body>
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">Thank you for taking the time to help us improve the platform </p>
+      <h1 id="title">Bic-4 Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve Bic-4 pens! </p>
       <form id="survey-form">        
         <fieldset>
           <label id="name-label" for="name">Name <input id="name" name="name" type="text" required /></label>          
           <label id="email-label" for="email">Email <input id="email" name="email" type="email" required /></label>
           <label id="number-label" for="number">Age <input id="number" type="number" name="age" min="10" max="99" pattern="[0-9]*"/></label>
-          <label for="referrer">What best describes your current role?
+          <label class="dropdown" for="referrer">What best describes your current role?
             <select id="dropdown" name="dropdown">
               <option value="">(select one)</option>
               <option value="1">Student</option>
-              <option value="2">Full Time Job</option>
-              <option value="3">Full Time learner</option>
-              <option value="4">Prefer not to say</option>
+              <option value="2">Writer</option>
+              <option value="3">Doodler</option>
+              <option value="4">Artist</option>
               <option value="5">Other</option>
             </select>
           </label>
         </fieldset>
         <fieldset>
-          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <p>Would you recommend Bic-4 pens to a friend?</p>
           <label for="Definitely"><input id="Definitely" type="radio" name="recommend" class="inline" /> Definitely</label>
           <label for="Maybe"><input id="Maybe" type="radio" name="recommend" class="inline" /> Maybe</label>
           <label for="Not sure"><input id="Not sure" type="radio" name="recommend" class="inline" /> Not sure</label>
@@ -35,26 +35,26 @@
           </label>
         </fieldset>
         <fieldset>
-          <label for="features">What is your favorite feature of freeCodeCamp?
+          <label for="features">What is your favorite feature of Bic-4 pens?
             <select id="features" name="features">
               <option value="">(select one)</option>
-              <option value="1">Challenges</option>
-              <option value="2">Projects</option>
-              <option value="3">Community</option>
-              <option value="4">Open Source</option>
+              <option value="1">Multi colored</option>
+              <option value="2">4 pens in one!</option>
+              <option value="3">Habit</option>
+              <option value="4">Nostalgia</option>
             </select>
           </label>
         </fieldset>
         <fieldset>
           <p>What would you like to see improved?</p>
           <label for="projects" name="projects">
-            <input id="projects" type="checkbox" required name="projects" class="inline" /> Projects 
+            <input id="projects" class="inline" type="checkbox" required name="projects" class="inline" /> Comfort 
           <label for="challenges" name="challenges">
-            <input id="challenges" type="checkbox" required name="challenges" class="inline" /> Challenges 
+            <input id="challenges" class="inline" type="checkbox" required name="challenges" class="inline" /> Ergonomics 
           <label for="videos" name="videos">
-            <input id="videos" type="checkbox" required name="videos" class="inline" /> Videos 
+            <input id="videos" class="inline" type="checkbox" required name="videos" class="inline" /> Cost 
           <label for="community" name="community">
-            <input id="community" type="checkbox" required name="community" class="inline" /> Community 
+            <input id="community" class="inline" type="checkbox" required name="community" class="inline" /> Ink 
           </label>
         </fieldset>
         <fieldset>
